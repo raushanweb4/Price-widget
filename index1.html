@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking Benefits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bs-primary: #162849;
+      --bs-danger: #d40046;
+      --bs-font-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--bs-font-sans-serif);
+      background-color: #f8f9fa;
+    }
+
+    .benefits-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .agent-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .agent-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid var(--bs-danger);
+      padding: 3px;
+    }
+
+    .benefits-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .benefits-list li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .benefits-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--bs-danger);
+      font-weight: bold;
+    }
+
+    .call-btn {
+      border: 2px solid var(--bs-danger);
+      border-radius: 50px;
+      padding: 10px 20px;
+      color: var(--bs-danger);
+      font-weight: 600;
+      background-color: transparent;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .call-btn:hover {
+      background-color: var(--bs-primary);
+      color: #fff;
+      border-color: var(--bs-primary);
+    }
+    .call-btn:hover .call-number {
+        color: #fff;
+    }
+    .call-number {
+      color: var(--bs-danger);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 767px) {
+      .benefits-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .call-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-4">
+  <div class="benefits-card">
+    <!-- Left Section -->
+    <div class="agent-info">
+      <img src="https://i.imgur.com/FfYh6Qp.png" alt="Agent" class="agent-img">
+      <div>
+        <h6 class="mb-2" style="color: #162849; font-weight: bold;">Benefits of booking with an agent</h6>
+        <ul class="benefits-list">
+          <li>Best Price Guarantee</li>
+          <li>Hassle-Free Booking</li>
+          <li>24/7 Customer Support</li>
+          <li>Flexible Travel Options</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div>
+      <div class="text-center">
+        <div class="call-btn">
+          Book Now - Call us 24/7<br>
+          <span class="call-number">000-800-050-3540</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

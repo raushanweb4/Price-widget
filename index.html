@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bs-primary: #2A5C8B;
-      --bs-secondary: #FF7F50;
+      --bs-primary: #162849;
+      --bs-secondary: #d40046;
       --bs-font-sans-serif: "Poppins", sans-serif;
     }
 
@@ -73,7 +73,7 @@
     }
 
     .call-btn {
-      background: linear-gradient(135deg, var(--bs-primary) 0%, #3B82F6 100%);
+      background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
       border-radius: 12px;
       padding: 16px 30px;
       color: white;
@@ -82,6 +82,11 @@
       transition: all 0.3s ease;
       text-align: center;
       box-shadow: 0 4px 15px rgba(42, 92, 139, 0.25);
+      transition: all .3s ease-in-out;
+    }
+    .call-btn:hover {
+      background: linear-gradient(135deg, var(--bs-secondary)  0%,  var(--bs-primary) 100%);
+      transition: all .3s ease-in-out;
     }
 
     .call-btn:hover {
@@ -128,6 +133,14 @@
 
 <body>
 
+  <header>
+    <ul>
+     
+      <li><a target="_blank" href="./index1.html">Design 1</a></li>
+      <li><a target="_blank" href="index2.html">Design 2</a></li>
+    </ul>
+  </header>
+
   <div class="container my-5">
     <div class="benefits-card">
       <!-- Left Section -->
@@ -149,64 +162,6 @@
         <button class="call-btn">
           Instant Booking Assistance<br>
           <span class="call-number">000-800-050-3540</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="container my-5">
-    <div class="benefits-card">
-      <!-- Left Section -->
-      <div class="benefits-section">
-        <div class="d-flex align-items-center gap-3 mb-4">
-          <div class="badge">Why Choose Us</div>
-          <h4 class="mb-0" style="color: var(--bs-primary);">Expert Booking Service</h4>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-icon">
-            <i class="fas fa-hand-holding-heart"></i>
-          </div>
-          <div class="benefit-content">
-            <h5>Personalized Service</h5>
-            <p>Tailored travel plans to match your preferences</p>
-          </div>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <div class="benefit-content">
-            <h5>Secure Booking</h5>
-            <p>SSL encrypted transactions for your safety</p>
-          </div>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-icon">
-            <i class="fas fa-clock"></i>
-          </div>
-          <div class="benefit-content">
-            <h5>Instant Confirmation</h5>
-            <p>Real-time booking status updates</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Section -->
-      <div class="call-section">
-        <div class="mb-4">
-          <div class="benefit-icon mx-auto mb-3">
-            <i class="fas fa-headset"></i>
-          </div>
-          <h3 class="mb-3" style="color: var(--bs-primary);">24/7 Support</h3>
-          <p class="text-muted">Connect with our travel experts anytime</p>
-        </div>
-        <button class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
-          <i class="fas fa-phone me-2"></i>000-800-050-3540
         </button>
       </div>
     </div>
