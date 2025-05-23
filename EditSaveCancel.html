@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+ 
+
+    .button-group button {
+      padding: 8px 16px;
+      margin-right: 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    #editBtn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    #saveBtn {
+      background-color: #28a745;
+      color: white;
+    }
+
+    #cancelBtn {
+      background-color: #dc3545;
+      color: white;
+    }
+  </style>
+</head>
+<body> 
+
+  
+  <div class="button-group">
+    <button id="editBtn">Edit</button>
+    <button id="saveBtn" style="display: none;">Save</button>
+    <button id="cancelBtn" style="display: none;">Cancel</button>
+  </div>
+
+
+  <input style=" margin-top: 40px;" title="all field are required" type="text" placeholder="all field are required">
+  <p title="all field are required">sdjfjsd</p>
+
+  <script>
+    $(document).ready(function () {
+      $('#editBtn').on('click', function () {
+        $('#editBtn').toggle();
+        $('#saveBtn, #cancelBtn').toggle();
+      });
+
+      $('#cancelBtn, #saveBtn').on('click', function () {
+        $('#editBtn').toggle();
+        $('#saveBtn, #cancelBtn').toggle();
+      });
+    });
+  </script>
+
+</body>
+</html>
